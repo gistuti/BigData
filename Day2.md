@@ -90,13 +90,13 @@ hdfs dfs -mkdir salarydata
 
 
 
-5. Create a database in the workbench and create table salaries2 using Lab 3.2 sql queries.
+5.Create a database in the workbench and create table salaries2 using Lab 3.2 sql queries.
 ---
 
 ![export before 4](https://user-images.githubusercontent.com/63596252/86248177-27e07c80-bbcb-11ea-92c9-acdf2dc47126.png)
 
 
-6. Now export the data using the sqoop command.
+6.Now export the data using the sqoop command.
 ---
 
 sqoop export --connect jdbc:mysql://(endpoint value of rds made on aws/name of the database) --username (your username) --password (your password)  --table salaries2 --export-dir salarydata --input-fields-terminated-by ","
